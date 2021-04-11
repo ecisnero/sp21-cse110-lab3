@@ -7,7 +7,7 @@
     </head>
     <body>
         <header>
-            <img src="/media/favicon.png">
+            <img src="/media/favicon.png" alt="Pixelized book favicon">
             <span>My Journal</span>
             <nav>
                 <ul>
@@ -26,8 +26,8 @@
             <h1 id="journal1">Journal 1 | Main</h1>
             <h2 id="latest">Latest</h2>
             <section>
-                <span><i>~ April 7, 2021 ~</i></span>
-                <span><h3>Wednesday</h3></span>
+                <p><i>~ April 7, 2021 ~</i></p>
+                <h3>Wednesday</h3>
                 <p>It's assignments day again. I have Lab today, but its not attendance based,
                     its mostly like a mini project. I have to do build a somewhat simple 
                     website that stores journal entries. I've never used HTML before so I
@@ -81,8 +81,8 @@
                     </p>
                     <hr>
                     <p> Well I'm done for the day. Time to play some video games!! :D</p>
-                    <video controls>
-                        <source src="media/Gameplay.mp4" type="video/mp4" width="700">
+                    <video controls width="700">
+                        <source src="media/Gameplay.mp4" type="video/mp4">
                     </video>
                 </section>
             </details>
@@ -152,6 +152,7 @@
                         <input type="text">
                     </div>
                     <br>
+                    <div>
                         <label for="entry">Entry Content:</label>
                     </div>
                     <div>  
@@ -169,7 +170,7 @@
                             <option>sample@email.com</option>
                             <option>random@email.com</option>
                         </datalist>
-                    </div>
+                    </span>
                     <br>
                     <br>
                     <div>
@@ -178,8 +179,7 @@
                     <br>
                      <div>
                          <button>Submit</button>
-                     </div>
-                     
+                     </div>                   
                 </fieldset>
             </form>
         </main>
@@ -189,6 +189,5 @@
             <p><em>Some story elements may be exaggerated or fictionalized to emulate journal usage</em></p>
             <p>&copy; ecisnero</p>
         </footer>
-
     </body>
 </html>
