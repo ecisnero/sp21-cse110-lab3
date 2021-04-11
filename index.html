@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Journal</title>
+        <link rel="icon" href="/media/favicon.png">
+    </head>
+    <body>
+        <header>
+            <img src="/media/favicon.png">
+            <span>My Journal</span>
+            <nav>
+                <ul>
+                    <li><a href="#latest"><b>Latest</b></a></li>
+                    <li><a href="#previous_entries"><b>Previous Entries</b></a></li>
+                    <li><a href="#new_entry"><b>New Entry</b></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <span>Journal:</span>
+            <span><a href="#journal1">1</a></span>
+            <span><a href="#journal2">2</a></span>
+            <span><a href="#journal3">3</a></span>
+            <h1 id="journal1">Journal 1 | Main</h1>
+            <h2 id="latest">Latest</h2>
+            <section>
+                <span><i>~ April 7, 2021 ~</i></span>
+                <span><h3>Wednesday</h3></span>
+                <p>It's assignments day again. I have Lab today, but its not attendance based,
+                    its mostly like a mini project. I have to do build a somewhat simple 
+                    website that stores journal entries. I've never used HTML before so I
+                    hope my website comes out nice. Its slightly overwhelming because there's 
+                    a lot of elements I must add. I made a checklist to make sure I include, but
+                    I hope I don't miss any of them.
+                </p>
+                <hr>
+                <p>I also worked on my circuits lab today. I had to restart on some components
+                    of it since I lost progress, from my previous Matlab online session. I
+                    thought Matlab autosaved, but I guess I was wrong. It turns out any live
+                    script I write must be manually saved once before it gets autosaved. I'll
+                    be sure for next time. I can't waste an extra 30 minutes again. I was lucky 
+                    I didn't get so far last time.
+                </p>
+                <p> All cool part of my lab was that I got to design a filter that echoed my voice</p>
+                <figure>
+                    <figcaption>Original Sound:</figcaption>
+                    <audio controls src="/media/NormalSound.m4a"></audio>
+                </figure>
+                <figure>
+                    <figcaption>Echoed Sound:</figcaption>
+                    <audio controls src="/media/EchoedSound.m4a"></audio>
+                </figure>
+            </section>
+
+            <h2 id="previous_entries">Previous Entries</h2>
+            <details>
+                <summary>April 6, 2021</summary>
+                <section>
+                    <h3>Tuesday</h3>
+                    <p>Lecture Day! Lecture Day! Time for 4hr 20 min of sitting and taking notes.</p>
+                    <hr>
+                    <p>I started with my circuits class, and learned so much. We learned about first
+                        order filters. I'm glad we're solving them using Laplace and Fourier Transform.
+                        I can't imagine solving them in the time domain as a differential equation. I've
+                        already forgotten so much from my introductory Calculus courses. I really need
+                        to practice deriving and integrating soon.
+                    </p>
+                    <hr>
+                    <p>I just got out of Stats. The quiz was kind of tough. The professor gave us 10 minutes
+                        to solve 3 problems. The homework was nothing like the quiz, but it did sort of 
+                        help me understand the topics. I should probably do the midterms from past quarters
+                        instead. I just hope I get a good grade.
+                    </p>
+                    <hr>
+                    <p>Software Engineering, lets go!!! This class is <em>just</em> the best. I just love seeing the
+                        lecture slides full of memes. We learned about the essential components of fluid teamwork,
+                        since we're getting started on a project. I really hope I do good in this upcoming 
+                        group project.
+                    </p>
+                    <hr>
+                    <p> Well I'm done for the day. Time to play some video games!! :D</p>
+                    <video controls>
+                        <source src="media/Gameplay.mp4" type="video/mp4" width="700">
+                    </video>
+                </section>
+            </details>
+            <details>
+                <summary>April 5, 2021</summary>
+                <section>
+                    <h3>Monday</h3>
+                    <p>And thus the start of my week. Today, I had a <i>free</i> day. That is to say,
+                        lecture free day. I'm slowly growing accustomed to my new schedule. It's a miracle
+                        that I was able to schedule all my courses into 2 of the 5 weekdays. I think I like
+                        it. Its nice to have whole days dedicated for learning, without the need to do 
+                        homework, and still feel productive. Likewise, its a huge bonus to complete 
+                        assignments all day without forcibly commiting new content to memory.
+                    </p>
+                    <hr>
+                    <p>Weekly Goals:</p>
+                    <ol>
+                        <li>Finish circuits lab early</li>
+                        <li>Go to the gym</li>
+                        <li>Find a good book to read</li>
+                    </ol>
+                    <hr>
+                    <p> I've started doing my Statistics homework. I gotta be ready for tomorrow's quiz.
+                        For the most part it feels pretty straighforward. I did get stuck on one or two problems.
+                        It doesn't seem like we covered Combinatorics or Permutations all too much last lecture.
+                        Hopefully the professor doesn't include these types of problems on the quiz.
+
+                    </p>
+                    <hr>
+                    <p>I went for a walk and decided to snap a picture :)</p>
+                    <img src="media/Sightseeing.png" width="700" 
+                    alt="Picture of a building under the cover of night illuminated by small
+                    street lamps, and surrounded by a small trees">
+                </section>
+            </details>
+            
+            <h2 id="new_entry">Compose New Entry</h2>
+            <form>
+                <fieldset>
+                    <legend>Entry</legend>
+                    <div>
+                        <label>Select Journal:</label>
+                    </div>
+                    <div>
+                        <select>
+                            <option value="journal1">Journal 1 (Main)</option>
+                            <option value="journal1">Journal 2 (Alt)</option>
+                            <option value="journal1">Journal 3 (Private)</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Select Date:</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="date-select" id="today" checked>
+                        <label for="today">Today</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="date-select" id="custom">
+                        <label for="custom">Custom</label>
+                        <input type="date" value="2021-04-09">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Title:</label>
+                        <input type="text">
+                    </div>
+                    <br>
+                        <label for="entry">Entry Content:</label>
+                    </div>
+                    <div>  
+                        <textarea id="entry" placeholder="Today I..." 
+                        rows="20" cols="100"></textarea>
+                    </div>
+                    <br>
+                    <span>
+                        <input type="checkbox" id="email-copy">
+                        <label for="email-copy">Send a copy of the entry to my email:</label>
+                    </span>
+                    <span>
+                        <input list="email-list">
+                        <datalist id="email-list">
+                            <option>sample@email.com</option>
+                            <option>random@email.com</option>
+                        </datalist>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <strong>Warning: Do not close browser until submission is successfully uploaded</strong>
+                    </div>
+                    <br>
+                     <div>
+                         <button>Submit</button>
+                     </div>
+                     
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <hr>
+            <p><em>Some story elements may be exaggerated or fictionalized to emulate journal usage</em></p>
+            <p>&copy; ecisnero</p>
+        </footer>
+
+    </body>
+</html>
