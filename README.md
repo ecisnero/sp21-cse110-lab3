@@ -1,1 +1,1 @@
-ecisnero.github.io/Lab2
+https://ecisnero.github.io/Lab2/
