@@ -1,0 +1,19 @@
+# Stand-Up Notes Template
+
+ ## Completed Items
+- I've worked on...
+- Its current state is...
+
+## Current Tasks
+- Right now I'm  working on...
+- I still need to ... 
+- Current progress:
+  1. Just started
+  2. Moderate 
+  3. Almost Completed
+
+## Issues
+- I'm stuck on ...
+- I've had issues with...
+- Failed Solutions
+- Proposed solutions?
