@@ -7,10 +7,19 @@ body {
 }
 footer {
     background-color: rgb(133, 189, 175);
+    text-align: center;
 }
 a {
     text-decoration-line: none;
     color:rgb(103, 89, 167)
+}
+#cover {
+    margin:auto;
+}
+#coverpage {
+    min-width:5cm;
+    max-width:50cm;
+    margin:auto
 }
 
 /* HEADER Styles @@@@@@@@@@@@@@@*/
@@ -49,8 +58,66 @@ header {
     border-left-style:solid;
     border-color:rgba(72, 182, 8, 0.329);
     border-width: 20px;
-
     backdrop-filter: blur(1px);
+    text-align: center;
 }
 
+/*ENTRY Styles @@@@@@@@@@@@@@@*/
+section {
+    background-color:white;
+    border-style: solid;
+    border-color: white;
+    border-width: 1cm;
+    border-radius: 10px;
+}
+
+#latest {
+    color:rgb(255, 255, 255);
+    background-color:rgb(83, 20, 20);
+    border-style: solid;
+    border-color: rgb(83, 20, 20);
+    border-width: 20px;
+    border-radius: 10px;
+    margin-bottom: -20px;
+
+}
+#previous_entries {
+    color:rgb(255, 255, 255);
+    background-color:rgb(83, 20, 20);
+    border-style: solid;
+    border-color: rgb(83, 20, 20);
+    border-width: 20px;
+    border-radius: 10px;
+    margin-bottom: -20px;
+}
+details{
+    background-color:rgb(83, 20, 20);
+    border-style: solid;
+    border-color: rgb(83, 20, 20);
+    border-width: 20px;
+    border-radius: 10px;
+    margin-bottom: -20px;
+}
+summary{
+    color: white;
+}
+.entrytype-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.entrytile{
+    width: 20cm;
+    margin: 20px 20px 20px 20px;
+}
+
+.visual-media{
+    width: 35em;
+    border-right-style:solid;
+    border-bottom-style:solid;
+    border-color: rgba(72, 181, 189, 0.39);
+    border-width: 10px;
+    border-radius: 20px
+
+}
 
