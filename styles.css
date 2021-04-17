@@ -3,30 +3,54 @@ html {
     font-family: 'Nunito', sans-serif;
 }
 body {
-    background-color: rgb(230, 225, 219);
+    background-color:#FAC6B9;
+}
+#booklet{
+    background-color:rgb(245, 232, 216);
+    border-radius: 0px;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 footer {
-    background-color: rgb(133, 189, 175);
+    background-image:linear-gradient(180deg, #0384A3, #026680);
+    margin: 0cm -15px -1cm -15px;
     text-align: center;
+    color: white;
 }
 a {
     text-decoration-line: none;
-    color:rgb(103, 89, 167)
+    color:rgb(67, 31, 228)
 }
+/* Cover Page */
 #cover {
-    margin:auto;
+    margin-top:-10%;
+    padding-top: -30cm;
+    object-position: -10cm;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 #coverpage {
-    min-width:5cm;
-    max-width:50cm;
-    margin:auto
+    width: 100%;
+    object-position: 0cm 0cm;
+    object-fit: cover;
+    min-height: 10cm;
+    max-height: 15cm;
+}
+#journal1 {
+    background-color: rgb(153, 108, 97);
+    padding: 1cm 1cm 1cm 1cm;
+    margin-bottom: 1cm;
+    color: white;
+    border-radius:10px;
 }
 
 /* HEADER Styles @@@@@@@@@@@@@@@*/
 #Headtitle {
-    color: rgb(158, 9, 9);
-    font-weight: bold;
-    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: rgb(243, 68, 14);
+    font-size: 40px;
+    font-weight: 300;
     margin: auto;
 }
 #nav-links-list {
@@ -36,19 +60,21 @@ a {
     padding: 0px 0px 10px 0px
 }
 .nav-link {
+    font-size:20px;
     margin: 0px 10px 0px 2px
 }
 header {
-    background-color: rgba(157, 181, 224, 0.904);
+    background-image: linear-gradient(45deg, rgba(21, 0, 141, 0.856), rgba(5, 127, 148, 0.644));
+    /*background-color: rgba(157, 181, 224, 0.904);*/
     z-index: 1;
     position: sticky;
     top: 0px;
 
     /*margin config*/
-    margin-top: -16px;
+    margin-top: -6px;
     margin-bottom: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -15px;
+    margin-right: -15px;
 
     /*padding config*/
     padding-top: 1px;
@@ -56,9 +82,9 @@ header {
     /*header border config*/
 
     border-left-style:solid;
-    border-color:rgba(72, 182, 8, 0.329);
-    border-width: 20px;
-    backdrop-filter: blur(1px);
+    border-color:rgba(0, 0, 0, 0.329);
+    border-width: 40px;
+    backdrop-filter: blur(2px);
     text-align: center;
 }
 
@@ -73,7 +99,7 @@ section {
 
 #latest {
     color:rgb(255, 255, 255);
-    background-color:rgb(83, 20, 20);
+    background-color:rgb(90, 38, 38);
     border-style: solid;
     border-color: rgb(83, 20, 20);
     border-width: 20px;
@@ -113,10 +139,6 @@ summary{
 
 .visual-media{
     width: 35em;
-    border-right-style:solid;
-    border-bottom-style:solid;
-    border-color: rgba(72, 181, 189, 0.39);
-    border-width: 10px;
     border-radius: 20px
 
 }
