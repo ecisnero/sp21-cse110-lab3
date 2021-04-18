@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <style>
+        body {
+    background-color:#FAC6B9;
+}
+    </style>
     <meta charset="UTF-8">
     <title>Journey Journals</title>
     <link rel="icon" href="favicon.ico">
@@ -16,12 +21,13 @@
         <p id="app-prompt"> Use our app instead</p>
     </div>
     <header>
-        <span id=Headtitle>Journey Journals</span>
+        <!--Inline CSS-->
+        <span id=Headtitle style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Journey Journals</span>
         <nav>
             <ul id="nav-links-list">
-                <li class="nav-link"><a href="#latest"><b>Latest</b></a></li>
-                <li class="nav-link"><a href="#previous-entries"><b>Previous Entries</b></a></li>
-                <li class="nav-link"><a href="#new-entry"><b>New Entry</b></a></li>
+                <li><a href="#latest"><b>Latest</b></a></li>
+                <li><a href="#previous-entries"><b>Previous Entries</b></a></li>
+                <li><a href="#new-entry"><b>New Entry</b></a></li>
             </ul>
         </nav>
     </header>
@@ -143,59 +149,49 @@
                     <form>
                         <fieldset>
                             <legend>Entry</legend>
-                            <div>
-                                <label>Select Journal:</label>
+                            <div id="selections">
+                                <div>
+                                    <label>Select Journal:</label>
+                                    <div>
+                                    <select>
+                                        <option value="journal1">Journal 1 (Main)</option>
+                                        <option value="journal1">Journal 2 (Alt)</option>
+                                        <option value="journal1">Journal 3 (Private)</option>
+                                    </select>
+                                </div>
+                                </div>
+                                <div>
+                                    <label>Select Date:</label>
+                                    <div>
+                                        <input type="radio" name="date-select" id="today" checked>
+                                        <label for="today">Today</label>
+                                        <input type="radio" name="date-select" id="custom">
+                                        <label for="custom">Custom</label>
+                                        <input type="date" value="2021-04-09">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label>Title:</label>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="email-copy">
+                                    <label for="email-copy">Send a copy of the entry to my email:</label>
+                                    <input list="email-list">
+                                    <datalist id="email-list">
+                                        <option>sample@email.com</option>
+                                        <option>random@email.com</option>
+                                    </datalist>
+                                </div>
                             </div>
-                            <div>
-                                <select>
-                                    <option value="journal1">Journal 1 (Main)</option>
-                                    <option value="journal1">Journal 2 (Alt)</option>
-                                    <option value="journal1">Journal 3 (Private)</option>
-                                </select>
-                            </div>
-                            <br>
-                            <div>
-                                <label>Select Date:</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="date-select" id="today" checked>
-                                <label for="today">Today</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="date-select" id="custom">
-                                <label for="custom">Custom</label>
-                                <input type="date" value="2021-04-09">
-                            </div>
-                            <br>
-                            <div>
-                                <label>Title:</label>
-                                <input type="text">
-                            </div>
-                            <br>
                             <div>
                                 <label for="entry">Entry Content:</label>
-                            </div>
-                            <div>
                                 <textarea id="entry" placeholder="Today I..."></textarea>
                             </div>
-                            <br>
-                            <span>
-                                <input type="checkbox" id="email-copy">
-                                <label for="email-copy">Send a copy of the entry to my email:</label>
-                            </span>
-                            <span>
-                                <input list="email-list">
-                                <datalist id="email-list">
-                                    <option>sample@email.com</option>
-                                    <option>random@email.com</option>
-                                </datalist>
-                            </span>
-                            <br>
-                            <br>
                             <div>
-                                <strong>Warning: Do not close browser until submission is successfully uploaded</strong>
+                                <strong>Warning: Do not close browser until submission is successfully
+                                    uploaded</strong>
                             </div>
-                            <br>
                             <div>
                                 <button id=submit-button>Submit</button>
                             </div>

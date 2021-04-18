@@ -1,11 +1,9 @@
-/*General*/
-
+/*External CSS*/
+/*CSS for General Page elements*/
 *{
     font-family: 'Nunito', sans-serif;
 }
-body {
-    background-color:#FAC6B9;
-}
+
 #booklet{
     background-color:rgb(245, 232, 216);
     border-radius: 0px;
@@ -23,6 +21,13 @@ a {
     color:rgb(67, 31, 228)
 
 }
+/* Theme Color for heading*/
+#latest, #previous-entries, #new-entry{
+    background-color:rgb(69, 190, 164);
+    border-color: rgb(69, 190, 164);
+    color: white;
+}
+
 /* Cover Page */
 #cover {
     margin-top:-10vh;
@@ -44,24 +49,13 @@ a {
     scroll-margin-top: 3.5cm;
 }
 
-/* HEADER Styles @@@@@@@@@@@@@@@*/
+/* HEADER Styles*/
 #Headtitle {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     color: rgb(243, 68, 14);
     font-size: 40px;
     font-weight: 300;
     margin: auto;
-}
-#nav-links-list {
-    display:flex;
-    list-style-type: none;
-    background-color: rgb(216, 216, 216);
-    padding: 0px 0px 10px 0px
-}
-.nav-link {
-    font-size:20px;
-    margin: 0px 10px 0px 2px
 }
 header {
     background-image: linear-gradient(45deg, rgba(21, 0, 141, 0.856), rgba(5, 127, 148, 0.644));
@@ -87,102 +81,18 @@ header {
     backdrop-filter: blur(2px);
     text-align: center;
 }
-
-/*ENTRY Styles @@@@@@@@@@@@@@@*/
-section {
-    background-color:white;
-    border-style: solid;
-    border-color: white;
-    border-width: 1cm;
-    border-radius: 10px;
-}
-
-#latest {
-    color:rgb(255, 255, 255);
-    background-color:rgb(69, 190, 164);
-    border-style: solid;
-    border-color: rgb(69, 190, 164);
-    border-width: 20px;
-    border-radius: 10px;
-    margin-bottom: -20px;
-    scroll-margin-top: 3cm;
-}
-#previous-entries {
-    color:rgb(255, 255, 255);
-    background-color:rgb(69, 190, 164);
-    border-style: solid;
-    border-color: rgb(69, 190, 164);
-    border-width: 20px;
-    border-radius: 10px;
-    margin-bottom: -20px;
-    scroll-margin-top: 3.0cm;
-}
-details{
-    background-color:#FAC6B9;
-    border-style: solid;
-    border-color: #FAC6B9;
-    border-width: 20px;
-    border-radius: 10px;
-    margin-bottom: -20px;
-}
-summary{
-    color:teal;
-}
-.entrytype-container{
+/* Navigation Bar Styles*/
+#nav-links-list {
     display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.entrytile{
-    width: 20cm;
-    margin: 20px 20px 20px 20px;
+    list-style-type: none;
+    background-color: rgb(216, 216, 216);
+    padding: 0px 0px 10px 0px
 }
 
-.visual-media{
-    width: 70vmin;
-    max-width: 40em;
-    border-radius: 20px
-
+#nav-links-list li {
+    font-size:20px;
+    margin: 0px 10px 0px 2px
 }
-figure{
-    display: inline;
-}
-
-/*FORM Styles @@@@@@@@@@@@@@@*/
-#new-entry{
-    scroll-margin-top: 3.0cm;
-    background-color: rgb(69, 190, 164);
-    color: white;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: rgb(69, 190, 164);
-    border-width: 20px;
-    border-radius: 10px;
-    margin-bottom: -20px;
-}
-form {
-    background-color: white;
-    border-radius: 10px;
-}
-fieldset{
-    border-radius: 10px;
-    padding: 0.5in 0.5in 0.5in 0.5in;
-}
-textarea{
-    height: 20vh;
-    width: 70vw;
-    min-height: 2in;
-    min-width: 3.5in;
-    max-height: 3in;
-    max-width: 6.7in;
-    margin: auto;
-}
-#submit-button{
-position:relative;
-left: 90%;
-}
-
-/* MISC */
 a:hover {
     color:white;
 }
@@ -199,6 +109,119 @@ a:active {
     color:rgb(243, 68, 14);
 }
 
+/*ENTRY Styles*/
+section {
+    background-color:white;
+    border-style: solid;
+    border-color: white;
+    border-width: 1cm;
+    border-radius: 10px;
+}
+/*titles*/
+#latest {
+    border-style: solid;
+    border-width: 20px;
+    border-radius: 10px;
+    margin-bottom: -20px;
+    scroll-margin-top: 3cm;
+}
+#previous-entries {
+    border-style: solid;
+    border-width: 20px;
+    border-radius: 10px;
+    margin-bottom: -20px;
+    scroll-margin-top: 3.0cm;
+}
+/*previous entry pop-up*/
+details{
+    background-color:#FAC6B9;
+    border-style: solid;
+    border-color: #FAC6B9;
+    border-width: 20px;
+    border-radius: 10px;
+    margin-bottom: -20px;
+}
+summary{
+    color:teal;
+}
+.entrytype-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+.entrytype-container > div{
+    width: 20cm;
+    margin: 20px 20px 20px 20px;
+}
+/* entry media */
+.visual-media{
+    width: 70vmin;
+    max-width: 40em;
+    border-radius: 20px
+
+}
+figure{
+    display: inline;
+}
+figcaption + audio{
+    padding: 10px;
+    border-radius:10px;
+    background-color: rgba(150, 67, 0, 0.329);
+}
+
+
+
+/*FORM Styles*/
+#new-entry{
+    scroll-margin-top: 3.0cm;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 20px;
+    border-radius: 10px;
+    margin-bottom: -20px;
+}
+form {
+    background-color: white;
+    border-radius: 10px;
+}
+fieldset{
+    border-radius: 10px;
+    padding: 0.5in 0.5in 0.5in 0.5in;
+}
+legend ~ div {
+    font-weight: 900;
+}
+textarea{
+    height: 20vh;
+    width: 70vw;
+    min-height: 2in;
+    min-width: 3.5in;
+    max-height: 3in;
+    max-width: 6.7in;
+    margin: auto;
+}
+#submit-button{
+position:relative;
+left: 90%;
+}
+#selections{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2.7cm 2.7cm;
+    justify-items: space-evenly;
+    align-content: space-between;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+#selections > div{
+    background-color:#FAC6B9;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* MISC (Reponsiveness)*/
 #app-prompt{
     position: absolute;
     top:0px;
@@ -215,3 +238,6 @@ a:active {
         display: none;
     }
 }
+
+
+
