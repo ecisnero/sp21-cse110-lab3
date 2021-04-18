@@ -13,23 +13,26 @@
 <body>
     <div id="cover">
         <img id="coverpage" src="media/Journal.jpg" alt="Journal">
+        <p id="app-prompt"> Use our app instead</p>
     </div>
     <header>
         <span id=Headtitle>Journey Journals</span>
         <nav>
             <ul id="nav-links-list">
                 <li class="nav-link"><a href="#latest"><b>Latest</b></a></li>
-                <li class="nav-link"><a href="#previous_entries"><b>Previous Entries</b></a></li>
-                <li class="nav-link"><a href="#new_entry"><b>New Entry</b></a></li>
+                <li class="nav-link"><a href="#previous-entries"><b>Previous Entries</b></a></li>
+                <li class="nav-link"><a href="#new-entry"><b>New Entry</b></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <span>Journal:</span>
-        <span><a href="#journal1">1</a></span>
-        <span><a href="#journal2">2</a></span>
-        <span><a href="#journal3">3</a></span>
+        <div>
+            <span>Journal:</span>
+            <span><a href="#journal1">1</a></span>
+            <span><a href="#journal2">2</a></span>
+            <span><a href="#journal3">3</a></span>
+        </div>
         <div id="journal1">
             <h1>Journal 1 | Main</h1>
             <h3>Erik Cisneros</h3>
@@ -68,7 +71,7 @@
                     </section>
                 </div>
                 <div class="entrytile">
-                    <h2 id="previous_entries">Previous Entries</h2>
+                    <h2 id="previous-entries">Previous Entries</h2>
                     <details>
                         <summary>April 6, 2021</summary>
                         <section>
@@ -136,7 +139,7 @@
                     </details>
                 </div>
                 <div class="entrytile">
-                    <h2 id="new_entry">Compose New Entry</h2>
+                    <h2 id="new-entry">Compose New Entry</h2>
                     <form>
                         <fieldset>
                             <legend>Entry</legend>
@@ -173,7 +176,7 @@
                                 <label for="entry">Entry Content:</label>
                             </div>
                             <div>
-                                <textarea id="entry" placeholder="Today I..." rows="20" cols="80"></textarea>
+                                <textarea id="entry" placeholder="Today I..."></textarea>
                             </div>
                             <br>
                             <span>
@@ -194,7 +197,7 @@
                             </div>
                             <br>
                             <div>
-                                <button>Submit</button>
+                                <button id=submit-button>Submit</button>
                             </div>
                         </fieldset>
                     </form>
